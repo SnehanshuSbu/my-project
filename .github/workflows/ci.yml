@@ -8,7 +8,10 @@ on:
     types: [created]
 
 jobs:
-  build:
+  push:
+    branches: [ master ]
+  pull-requests:
+    branched: [ master ]
 
     runs-on: ubuntu-latest
     permissions:
