@@ -4,14 +4,13 @@
 name: Gradle Package
 
 on:
-  release:
-    types: [created]
-
-jobs:
   push:
     branches: [ master ]
-  pull-requests:
-    branched: [ master ]
+  pull-request:
+    branches: [ master ]
+
+jobs:
+  build:
 
     runs-on: ubuntu-latest
     permissions:
